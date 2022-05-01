@@ -20,10 +20,10 @@
 #include "BlynkEdgent.h"
 
 
-#include <SimpleTimer.h>  
+#include <SimpleTimer.h>    // https://github.com/jfturcot/SimpleTimer
 SimpleTimer timer;
 
-#include <DHT.h>
+#include <DHT.h>            // https://github.com/adafruit/DHT-sensor-library
 #define DHTTYPE DHT11   // ใช้ตัวไหน ให้เปลี่ยนเป็นตัวนั้น DHT22
 #define DHTPIN D5       //  ใช้ขาไหนเปลี่ยนเป็นขานั้น แนะนำให้ใช้ D5 เหมือนเดิม
 DHT dht(DHTPIN, DHTTYPE);
