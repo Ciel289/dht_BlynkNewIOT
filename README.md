@@ -3,4 +3,4 @@
 
 
 simpletimer   https://github.com/jfturcot/SimpleTimer
-\nDHT           https://github.com/adafruit/DHT-sensor-library
+DHT           https://github.com/adafruit/DHT-sensor-library
