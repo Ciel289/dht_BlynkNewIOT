@@ -1,5 +1,6 @@
 
-// เอามาจาก info ในเว็บ
+// เอามาจาก info ในเว็บ 
+// อย่าลืมเอา " // " ออก
 //#define BLYNK_TEMPLATE_ID " "
 //#define BLYNK_DEVICE_NAME " "
 
@@ -23,15 +24,15 @@
 SimpleTimer timer;
 
 #include <DHT.h>
-#define DHTTYPE DHT11
-#define DHTPIN D5
+#define DHTTYPE DHT11   // ใช้ตัวไหน ให้เปลี่ยนเป็นตัวนั้น DHT22
+#define DHTPIN D5       //  ใช้ขาไหนเปลี่ยนเป็นขานั้น แนะนำให้ใช้ D5 เหมือนเดิม
 DHT dht(DHTPIN, DHTTYPE);
 
 #define rel1 D6
 
 
 BLYNK_WRITE(V2){
-  int valV2 = param.asInt();
+  int valV2 = param.asInt(); 
   digitalWrite(rel1, valV2);
 }
 
